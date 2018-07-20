@@ -1,15 +1,15 @@
-//THIS IS ALL STILL DEFAULT TEMPLATE - REMOVE WHEN UNTRUE
-
 pragma solidity ^0.4.24;
 
 // ----------------------------------------------------------------------------
-// 'TestCoinTwo' token contract
+// 'HiringToken' token contract
 //
-// Deployed to : 0xfcF8384E510e335C90645E68D151774567F20a30
-// Symbol      : TESK
-// Name        : Test Coin Two
-// Total supply: 100000000
-// Decimals    : 18
+// Deployed to : 0x91a6C2B20E42B397BFf6c7Fed24EaA78286AD547
+// Symbol      : WRK
+// Name        : Hiring Token
+// Total supply: 5000
+// Decimals    : 1
+//
+// Template adapted by krisj 
 //
 // Enjoy.
 //
@@ -101,7 +101,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract TestCoinTwo is ERC20Interface, Owned, SafeMath {
+contract HiringToken is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -114,13 +114,13 @@ contract TestCoinTwo is ERC20Interface, Owned, SafeMath {
     // ------------------------------------------------------------------------
     // Constructor
     // ------------------------------------------------------------------------
-    function TestCoinTwo() public {
-        symbol = "TESK";
-        name = "Test Coin Two";
-        decimals = 18;
-        _totalSupply = 100000000000000000000000000;
-        balances[0xfcF8384E510e335C90645E68D151774567F20a30] = _totalSupply;
-        Transfer(address(0), 0xfcF8384E510e335C90645E68D151774567F20a30, _totalSupply);
+    function HiringToken() public {
+        symbol = "WRK";
+        name = "HiringToken";
+        decimals = 1;
+        _totalSupply = 50000;
+        balances[0x91a6C2B20E42B397BFf6c7Fed24EaA78286AD547] = _totalSupply;
+        Transfer(address(0), 0x91a6C2B20E42B397BFf6c7Fed24EaA78286AD547, _totalSupply);
     }
 
 
