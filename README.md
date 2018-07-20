@@ -13,11 +13,18 @@ The concept includes more than just the issuance of the coin, as it is intended 
 single address - my own, the issuer. The intention would be to create another wallet with enough ETH to handle 
 a few transactions at a time, and connect it to a live website faucet (very similar to getting test ETH at
 https://faucet.metamask.io). The faucet could be kept stocked with only as much time as I have to devote to 
-projects at any given time. Prospective employers could navigate here, claim a token using metamask, and 
-transfer it to my public work address. This could be a symbolic gesture of an intention of offer, or could 
-include details of the work or contract in the transaction notes (pretty sure this is possible? test). The 
-transfer of tokens from my public wallet to the faucet address could also use this function (if possible) to 
-publish details on the work/completion/contract/any other relevant detail. This could potentially become a 
+projects at any given time. 
+
+Prospective employers could navigate to the faucet, claim a token using metamask, and transfer it to my 
+public work address. This could be a symbolic gesture of an intention of offer, or could include simple details 
+of the work or contract in the transaction input data. Data would have to be in HEX (use https://www.asciitohex.com)
+
+  Refer to
+    https://ethereum.stackexchange.com/questions/2466/how-do-i-send-an-arbitary-message-to-an-ethereum-address
+    https://ethereum.stackexchange.com/questions/11144/how-to-decode-input-data-from-a-transaction
+
+The transfer of tokens from my public wallet to the faucet address could also use this function to 
+publish simple details on the work/completion/contract/any other relevant detail. This could potentially become a 
 portfolio of work as well. 
 
 This will be my first time developing a token and deploying to the mainnet (when/if I do). I am also using the
